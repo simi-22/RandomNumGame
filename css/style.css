@@ -7,7 +7,9 @@ a{text-decoration: none; color: inherit;}
     font-weight: normal;
     font-style: normal;
 }
-
+body{
+    background-color: rgb(2, 13, 46);
+}
 section{
     display: flex;
     flex-direction: column;
@@ -17,6 +19,7 @@ section{
     height: 100vh;
     margin: 0 auto;
     text-align: center;
+    color: #fff;
 }
 section h1{
     font-size: 4em;
@@ -47,4 +50,77 @@ section p:last-of-type{
     padding: 10px 2px;
     border: none;
     background: none;
+    color: #fff;
+}
+span:first-of-type{
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 10%;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: rgb(242, 59, 59);
+    animation: bounce1 linear 5s infinite;
+}
+span:nth-of-type(2){
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 10%;
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-color: rgb(255, 236, 22);
+    animation: bounce2 linear 5s infinite;
+}
+
+@keyframes bounce1{
+    0%{
+
+    }
+    25%{
+        left: 30%;
+        top: 0;
+    }
+    50%{
+        left:50%;
+        top: 80%;
+    }
+    75%{
+        left: 75%;
+        top: 30%;
+    }
+    100%{
+        left: 100%;
+        top: 70%;
+    }
+}
+@keyframes bounce2{
+    10%{
+        left: 30%;
+        top: 30%;
+    }
+    25%{
+        left: 40%;
+        top: 80%;
+    }
+    50%{
+        left:60%;
+        top: 30%;
+    }
+    75%{
+        left: 70%;
+        top: 70%;
+    }
+    90%{
+        left: 90%;
+        top: 30%;
+    }
+    100%{
+        left: 100%;
+        top: 90%;
+    }
 }

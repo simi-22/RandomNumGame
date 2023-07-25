@@ -67,6 +67,7 @@ function play(){
 
     if(chances < 1){
         gameOver = true;
+        resultArea.innerHTML =`Game Over <br> NUMBER:${computerNum}`; // 기회끝났을때 답알려주는 기능
     }
     if(gameOver == true){
         playBtn.disabled = true;
